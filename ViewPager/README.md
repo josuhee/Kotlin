@@ -1,16 +1,16 @@
 ### 간단 기능 ###
-> Navigation Drawer와 Fragment 전환  
+> ViewPager와 auto Slide 구현  
 
 
 ### 기능 설명 ###
-> + 기본 home 화면에서 navigation에 따라 fragment1 과 fragment2의 이동  
-> + Navigation
->   + Navigation Drawer가 열린 상태에서 back을 누른다면 Drawer 닫기
->   + item1 = fragment1
->   + item2 = fragment2
-> + Home Fragment
->   + Home에서 back을 누른다면 앱 종료
-> + Fragment1, Fragment2
->   + 해당 fragment가 열려있을 경우 back을 누른다면 home fragment로 이동  
+> + androidx.viewpager.widget.ViewPager 사용  
+> + ViewPager Adapter
+>   + 5개의 페이지 생성
+> + page.xml
+>   + 페이지의 밑바탕
+> + handler, thread
+>   + thread를 이용해 2초마다 화면전환을 명령
+>   + 명령을 받으면 handler가 ui를 변경한다.    
 
 ### 실행 화면 ###
+![viewpager](https://user-images.githubusercontent.com/69746967/110954437-d90af980-838b-11eb-8e1b-ad4ac35e063b.gif)
